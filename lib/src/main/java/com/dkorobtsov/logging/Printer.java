@@ -72,7 +72,7 @@ class Printer {
     logWriter.log(RESPONSE_UP_LINE);
 
     final String[] urlLine = {URL_TAG + responseDetails.url, EMPTY_LINE};
-    logLines(urlLine, logWriter, true);
+    logLines(urlLine, logWriter, false);
 
     final String[] response = getResponse(level, responseDetails);
     logLines(response, logWriter, true);
@@ -107,7 +107,7 @@ class Printer {
     logWriter.log(RESPONSE_UP_LINE);
 
     final String[] urlLine = {URL_TAG + responseDetails.url, EMPTY_LINE};
-    logLines(urlLine, logWriter, true);
+    logLines(urlLine, logWriter, false);
 
     logLines(getResponse(level, responseDetails), logWriter, true);
 
