@@ -3,11 +3,11 @@ LoggingInterceptor - Interceptor for [OkHttp3](https://github.com/square/okhttp)
 --------
 [![wercker status](https://app.wercker.com/status/a5684f9e7c75dbf62072dcdd2a96cd90/s/ "wercker status")](https://app.wercker.com/project/byKey/a5684f9e7c75dbf62072dcdd2a96cd90)
 ![quality gate](https://sonarcloud.io/api/project_badges/measure?project=source%3Alib&metric=alert_status)
-![reliability](https://sonarcloud.io/api/project_badges/measure?project=LoggingInterceptor%3Alib&metric=reliability_rating)
 ![security](https://sonarcloud.io/api/project_badges/measure?project=source%3Alib&metric=security_rating)
 ![coverage](https://sonarcloud.io/api/project_badges/measure?project=source%3Alib&metric=coverage)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdkorobtsov%2FLoggingInterceptor.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdkorobtsov%2FLoggingInterceptor?ref=badge_shield)
 
+**NB! Library will be archived in the nearest future. Use new library [Plinter](https://github.com/dkorobtsov/plinter) instead**
 
 Description
 -----------
