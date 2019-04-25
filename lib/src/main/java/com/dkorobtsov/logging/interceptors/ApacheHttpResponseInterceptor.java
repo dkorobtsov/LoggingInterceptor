@@ -9,6 +9,8 @@ import com.dkorobtsov.logging.LoggerConfig;
 import com.dkorobtsov.logging.ResponseDetails;
 import java.io.IOException;
 import java.util.Objects;
+
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpResponseInterceptor;
 import org.apache.http.protocol.HttpContext;
@@ -27,8 +29,11 @@ public class ApacheHttpResponseInterceptor implements HttpResponseInterceptor {
     public void process(HttpResponse response, HttpContext context) throws IOException {
         if (isDebug && loggerConfig.level != Level.NONE) {
             String subtype = null;
-            if (Objects.requireNonNull(response.getEntity()).getContentType() != null) {
-                subtype = Objects.requireNonNull(response.getEntity().getContentType()).getValue();
+            final HttpEntity entity = response.getEntity();
+            if (entity != null) {
+                if (entity.getContentType() != null) {
+                    subtype = Objects.requireNonNull(entity.getContentType()).getValue();
+                }
             }
 
             ResponseDetails responseDetails = ResponseDetails
